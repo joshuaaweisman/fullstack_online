@@ -1,0 +1,573 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Monaco;}
+{\colortbl;\red255\green255\blue255;\red255\green128\blue0;\red255\green255\blue255;\red255\green255\blue255;
+\red244\green0\blue95;\red243\green235\blue0;\red127\green127\blue127;\red88\green209\blue235;\red0\green0\blue0;
+\red255\green83\blue8;\red34\green255\blue21;\red117\green110\blue255;\red128\green0\blue0;}
+{\*\expandedcolortbl;;\csgenericrgb\c100000\c50196\c0;\csgray\c100000;\csgenericrgb\c100000\c100000\c100000;
+\csgenericrgb\c95686\c0\c37255;\csgenericrgb\c95294\c92157\c0;\csgenericrgb\c49804\c49804\c49804;\csgenericrgb\c34510\c81961\c92157;\csgenericrgb\c0\c0\c0;
+\csgenericrgb\c100000\c32549\c3137;\cssrgb\c0\c100000\c9771;\cssrgb\c53480\c53209\c100000;\csgenericrgb\c50196\c0\c0;}
+\margl1440\margr1440\vieww16560\viewh19580\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b\fs24 \cf0 add\
+
+\b0 Let\'92s say you\'92ve made some changes to your website/program, but you haven\'92t updated them in Git yet. If you type 
+\b git status
+\b0 , it will tell you that you\'92ve done some stuff that Git doesn\'92t know about yet. 
+\b git add
+\b0  lets you \ul make Git aware of your newest changes\ulnone , so that you can save them.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 NOTE: Get in the habit of adding the modifier 
+\b -A
+\b0  to the end of 
+\b git add
+\b0 . This allows you to add EVERYTHING you\'92ve done (all the changes you\'92ve made) to Git.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1 \cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 git \cf5 add\cf4  \cf2 -A\
+\
+\cf4 git \cf5 add\cf4  \cf6 filename.rb\cf4 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+atom\
+
+\b0 This is how you \ul open a file in the program Atom (which is your text editor)\ulnone .\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1 \cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf5 atom\cf4  test_file.html\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ### Great! Now, the program Atom will open the file called test_file.html\cf4 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+branch\
+
+\b0 This is how you \ul look at all the different branches that exist for your project\ulnone . ie, you can see what all the different people on your team are working on, when they haven\'92t yet committed their changes.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1 \cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 git \cf5 branch\cf6 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 =>	* about-page	
+\fs18 \cf7 <\'97 These are the two branches you have going in your project\'85
+\fs24 \cf8 \
+	  master		
+\fs18 \cf7    \'85about-page and master.
+\fs24 \cf4 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+branch -d\
+
+\b0 This is how you \ul delete a local branch\ulnone .\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 NOTE: If you\'92re working on a branch, and you want to just delete it without saving any of the changes first\'85then do that using 
+\b branch -D
+\b0  (with a capital D).\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1 \cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 git branch			\cf8 			
+\fs18 \cf7 <\'97 Check to see what all your branches are
+\fs24 \cf4 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 =>	  about-page\cf4 					
+\fs18 \cf7 \}
+\fs24 \cf8 \
+	  branch-number-two\cf4 				
+\fs18 \cf7 \} <\'97 These are all of your current branches
+\fs24 \cf8 \
+	* master\cf4 						
+\fs18 \cf7 \} 
+\fs24 \cf4 \
+\
+git \cf5 branch -d \cf6 branch-number-two\cf4 		
+\fs18 \cf7 <\'97 Delete the branch called branch-number-two
+\fs24 \cf6 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 =>	Deleted branch about-page (was 8a13e0c)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 \
+git branch			\cf8 			
+\fs18 \cf7 <\'97 Check your branches again
+\fs24 \cf6 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 \
+=>	  about-page\cf4 		\cf8 			
+\fs18 \cf7 \}
+\fs24 \cf8 \
+	* master\cf4 			\cf8 			
+\fs18 \cf7 \} <\'97 And branch-number-two is gone!
+\fs24 \cf8 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+push origin --delete <branch name>\
+
+\b0 This is how you \ul delete a remote branch \ulnone (i.e., delete a branch from GitHub, and not just on your computer).\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1 \cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 git branch			\cf8 				
+\fs18 \cf7 <\'97 Check to see what all your branches are
+\fs24 \cf4 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 =>	  about-page\cf4 						
+\fs18 \cf7 \}
+\fs24 \cf8 \
+	  branch-number-two\cf4 					
+\fs18 \cf7 \} <\'97 These are all of your current branches
+\fs24 \cf8 \
+	* master\cf4 							
+\fs18 \cf7 \} 
+\fs24 \cf4 \
+\
+git \cf5 push origin --delete \cf6 branch-number-two\cf4 	
+\fs18 \cf7 <\'97 Delete the branch called branch-number-two
+\fs24 \cf6 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 =>	To https://github.com/JoshWeisman/learnenoughwebsite.git\
+	- [deleted]		branch-number-two\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ### Great! You just deleted the branch called branch-number-two from GitHub.\cf4 \
+	\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+checkout 
+\b0 (or 
+\b co
+\b0 )
+\b \
+
+\b0 This is how you \ul switch to a different branch\ulnone .\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1 \cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 git \cf5 checkout\cf4  \cf6 other-branch\
+\cf4 git \cf5 co\cf4  \cf6 other-branch\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 =>	Switched to branch \'91other-branch\'92 \cf4 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ### Great! Now, you\'92ve switched to a different branch called \cf6 other-branch\cf7 , and are currently working on that branch.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+checkout -b  
+\b0 (or 
+\b co
+\b0 )
+\b \
+
+\b0 This is how you \ul create a new branch\ulnone , and then \ul switch to it\ulnone .\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1 \cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 git \cf5 checkout -b\cf4  \cf6 branch-number-five\
+\cf4 git \cf5 checkout -b\cf4  \cf6 branch-number-five\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 =>	Switched to a new branch \'91branch-number-five\'92 \cf4 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ### Great! Now, you\'92ve created a new branch called \cf6 branch-number-five\cf7 , and are currently working on that branch.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+checkout -b gh-pages\
+
+\b0 This is how you \ul view your HTML website LIVE on the Internet, hosted by GitHub\ulnone . You create a new branch called 
+\b gh-pages
+\b0 , then push it up to GitHub. And once you\'92ve done that, you can view your HTML website at 
+\b http://<yourname>.github.io/<nameofwebsite>/ \
+\
+checkout -f\
+
+\b0 This is how you \ul go back to your most recent save\ulnone , the same way you do in a video game when you\'92ve messed some shit up and need to go back to the most recent checkpoint.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1 \cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ### Uh-oh\'85you were working on your project and you made a HUGE MISTAKE\cb9 \
+that could destroy everything. Don\'92t worry\'85just type:\cf3 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 git \cf5 checkout -f\cf8  \cf4 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ### Great! You just went back to your last checkpoint, so none of that damage has actually been done.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+clone\
+
+\b0 This is how you \ul duplicate a directory (or \'93duplicate a folder\'94)\ulnone . It\'92s a complex process, so I\'92ll break it down in steps:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\i \cf0 1: Go to GitHub and open up the project you\'92re working on.\
+2: On the right side, you will see a green button called \'93CLONE OR DOWNLOAD.\'94\
+3: When you click that, a little window pops up. On the right side, click the button \'93USE HTTPS\'94\
+4: A little web address shows up (starting with https://). Copy that web URL to the clipboard.\
+	\cf10 NOTE: This web address is called the 
+\b clone URL
+\b0 .
+\i0\b \cf0 \
+
+\i\b0 5: In the command line, write 
+\b git clone
+\b0  plus 
+\b <the web URL>
+\b0  plus 
+\b <the name of the folder you want to put it in>\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\i0\b0 \cf4 \cb0 \
+git \cf5 clone \cf11 https://github.com/JoshWeisman/learnenoughwebsite.git \cf12 new_folder\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\fs18 \cf12 	^						^					     ^\
+  clone command 				    web URL				           folder you\
+												    want to\
+												    put it in
+\fs24 \cf4 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ### Great! You just copied the entire project into a brand new folder, that is exactly the same as the original project (aka a \'93clone\'94 of it). \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+commit\
+
+\b0 Okay, so you\'92ve made some changes to your project, and you\'92ve used 
+\b git add
+\b0  to make sure Git is aware of the changes (also known as \'93staging\'94 your changes). Now that your changes are \'93staged,\'94 you want to COMMIT them. 
+\b git commit
+\b0  is how you \ul add your changes to the computer\'92s LOCAL repository (aka, the computer\'92s record of all the changes you\'92ve made)\ulnone . In other words\'85this is how you \'93save\'94 your changes to the local computer.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 NOTE: Get in the habit of adding the modifier 
+\b -a
+\b0  to the end of 
+\b git commit
+\b0 . This makes sure you add EVERYTHING you\'92ve done (all the changes you\'92ve made).\
+NOTE: Also get in the habit of adding the modifier 
+\b -m
+\b0  to the end of 
+\b git commit
+\b0 . This lets you add a little message that tell you what changes you made, so that if you go back and look at this specific save, you\'92ll know what the save includes.
+\b \cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b0 \cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 git \cf5 commit \cf2 -am \'93In this save, I created a new file called index.html\'94\cf4 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+commit --amend\
+
+\b0 When you\'92ve made a commit (i.e., \'93saved\'94 your project), and you want to make a change to the message you wrote for yourself using the 
+\b -m
+\b0  modifier\'85you type 
+\b git commit --amend
+\b0 , and the computer goes into the text editor, and you can change what you typed when you made that last save.
+\b \
+\
+diff\
+
+\b0 This is how you \ul see the difference between the LAST thing you saved\'85and the CURRENT changes you\'92ve made\ulnone .\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 NOTE: If you\'92ve already committed things (i.e, you\'92ve already typed 
+\b git commit
+\b0 ), and you still want to see the changes you made BEFORE you commit them\'85you need to type the word 
+\b --staged 
+\b0 after the word 
+\b diff
+\b0 . So the full command would look like this:\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\b \cf9 diff --staged\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b0 \cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ### Let\'92s say you have a file called \cf6 hello.txt\cf7 . And you want to add some new text to it. So, you go ahead and add an extra line of text to the end of the file: \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 echo \'93This is line #2\'94 >> \cf6 hello.txt\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ### And now, you want to see if you\'92ve made any changes that you haven\'92t saved yet. It\'92s easy \'97 just use \cf5 git diff\cf7 , and the computer will tell you what you\'92ve done since the last time you saved (or \'93committed\'94) your project.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 \
+\
+git \cf5 diff --staged\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 =>	diff \'97git a/\cf6 hello.txt\cf8  b/\cf6 hello.txt\cf8 \
+	index 4b5fa63..f3bfba0 100644\
+	--- a/\cf6 hello.txt\cf8 \
+	+++ b/\cf6 hello.txt\cf8 \
+	@@ -1 +1,2 @@\cf5 \
+    +This is line #2\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ### What it\'92s telling you\'85is that you added some text to the file \cf6 hello.txt\cf7 , and that text says the words \'93\cf5 This is line #2\cf7 \'94.\cf2 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+help\
+
+\b0 This is how you \ul read the dictionary definition of a git command\ulnone . From what I\'92m seeing, it\'92s the same exact thing as the 
+\b man
+\b0  command (which you can find on the 
+\b command line 
+\b0 page).
+\b \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b0 \cf4 \cb0 \
+\cf5 git help\cf4  push\cf6 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ### Great! Now, the computer will go into its dictionary and show you the definition of the \'93push\'94 command, and all the different stuff it can do.\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+init\
+
+\b0 This is how you \ul create a new repository \ulnone inside whatever folder you\'92re currently working in. Basically, a repository is a system of files that keeps track of every change you make to your project.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1 \cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 pwd
+\fs18 \cf7 							<\'97 Ask the computer what folder you\'92re in
+\fs24 \cf4 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 /Users/Josh/Desktop/new_website
+\fs18 \cf7 	<\'97 You\'92re inside a folder called new_website
+\fs24 \cf4 \
+\
+git \cf5 init
+\fs18 \cf7 						<\'97 Create a new REPOSITORY inside that folder
+\fs24 \cf5 \
+\cf8 Initialized empty Git repository in /Users/Josh/Desktop/new_website\cf5 /.git\cf4 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ### Great! Now, there\'92s a REPOSITORY called .git inside the folder called new_website.\
+\
+### \cf2 NOTE\cf7 : This repository is a HIDDEN FILE\'85so you can\'92t see it unless you look for the hidden files inside the new_website folder (with the command \cf4 ls\cf2  -a\cf7 )\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 ls
+\fs18 \cf7 							<\'97 Use \cf4 ls\cf7  to list what\'92s in the new_website folder
+\fs24 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 (empty \'97 it shows nothing)
+\fs18 \cf7 		<\'97 Sure enough\'85it still looks empty
+\fs24 \cf4 \
+\
+ls\cf2  -a
+\fs18 \cf7 						<\'97 But use \cf2 -a\cf7  to also list the hidden files
+\fs24 \cf2 \
+\cf8 .	..	.git
+\fs18 \cf7 					<\'97 And wham! There\'92s your REPOSITORY (.git)
+\fs24 \cf8 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+log\
+
+\b0 This is how you \ul look at the history of all the \'93saves\'94 you\'92ve made to Git\ulnone .\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 NOTE: If you want the computer to show you MORE DETAILS about each \'93save\'94 you made, use the modifier 
+\b -p
+\b0  at the end. This will show you a bunch of other stuff \'97 most importantly, all the stuff you would see if you entered the command 
+\b git diff
+\b0 .\cf0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1 \cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ###################################### EXAMPLE 1 ###############################################\cf4 \
+\
+git \cf5 log\cf4 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 \
+commit 8d455d234bc565643c7c12eedc2b0df9048a99a2a\
+Author: 	Josh Weisman <josh@joshweismanfilm.com>\
+Date: 	Sat Feb 4 23:24:58 2017 -0800\
+\
+	Create new file index.html inside ~/Desktop/repos/website\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ### Awesome! All the stuff in blue is just the computer telling you what the most recent \'93save\'94 was. You did it on Saturday, February 4th, and you added a little message for yourself that tells you what you did: Create a file called index.html inside the folder called website.\cf8 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf3 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ###################################### EXAMPLE 2 ###############################################\cf4 \
+\
+git \cf5 log \cf2 -p\cf4 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 \
+commit 8d455d234bc565643c7c12eedc2b0df9048a99a2a\
+Author: 	Josh Weisman <josh@joshweismanfilm.com>\
+Date: 	Sat Feb 4 23:24:58 2017 -0800\
+\
+	Create new file index.html inside ~/Desktop/repos/website\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 diff --git a/index.html b/index.html\
+index f3bfba0..45d754a 100644\
+--- a/index.html\
++++ b/index.html\
+@@ -1,2 +1 @@\
+-hello, world\
++<h1>hello, world</h1>\cf8 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+merge\
+
+\b0 Let\'92s say you broke away from the master branch, and are now working on a DIFFERENT branch. You\'92re done making your changes to the different/second branch\'85and now you want to \ul merge that other branch back into the master branch\ulnone , so that your project is officially updated with all your changes. You can do that using this command, 
+\b git merge
+\b0 .\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1 \cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 git checkout \cf12 master\cf4 		
+\fs18 \cf7 <\'97 Make sure you switch over to the MASTER BRANCH first.
+\fs24 \cf4 \
+\
+git \cf5 merge \cf6 other-branch\cf4 	
+\fs18 \cf7 <\'97 Now, merge it with the OTHER BRANCH you were working on
+\fs24 \cf4 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ### Great! Now, everything has been merged onto the \cf12 master branch\cf7 .\cf8 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+open\
+
+\b0 This is the equivalent of \ul double-clicking on a thing and opening it up in whatever program it usually opens in\ulnone .\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1 \cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf5 open \cf4 web_page.html\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ### Great! The .html file will now open in a new Safari (or Google Chrome) window.\cf8 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+pull\
+
+\b0 Let\'92s say two people are working on the same project. Person #1 has made a few changes, and Person #2 needs to incorporate those changes into the project on her computer. That\'92s great \'97 she can do that using 
+\b git pull
+\b0 . Basically, this command \ul pulls the most recent version of a project down from GitHub, and updates the project on your computer to match that most recent version\ulnone .\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1 \cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 git \cf5 pull\cf4 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ### Great! If you look at the files on your computer, they will now be updated to the most recent version that was pushed up to GitHub.\cf8 \
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+remote add origin\
+
+\b0 Let\'92s say you want to create a new project in GitHub. You\'92ve set up a \'93new repository\'94 on GitHub, you\'92ve named it, and now you want to push all your files into that repository. You can get started on that process by typing 
+\b git remote add origin
+\b0 .
+\b \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1\b0 \cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 git \cf5 pull\
+\cf4 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\b \cf0 \cb1 \
+reset --hard\
+
+\b0 Let\'92s say you\'92ve written a bunch of code that you DON\'92T want to save\'85but you\'92ve written so much of it, that it would be a huge pain in the ass to go back and find every line of code you want to remove. Use 
+\b git reset --hard
+\b0  to reset your code to the last checkpoint.
+\b \
+\
+status\
+
+\b0 This is how you \ul look at which changes Git already knows about, and which changes it doesn\'92t know about yet\ulnone .\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f1 \cf3 \cb0 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf4 git \cf5 status\cf4 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf8 \
+On branch master\
+\
+Initial commit\
+\
+Untracked files:\
+	(use \'93git add <file>\'85\'94 to include in what will be committed)\
+\
+		\cf13 index.html\cf8 \
+\
+nothing added to commit but untracked files present (use \'93git add\'94 to track)\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf7 ### Great! This is saying that you created a file called \cf13 index.html\cf7 , but Git doesn\'92t know about it yet.\cf8 \
+\
+}
