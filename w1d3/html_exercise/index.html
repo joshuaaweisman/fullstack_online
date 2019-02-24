@@ -2,10 +2,13 @@
     <head>
     <title>Josh Weisman Recipe</title>
     </head>
+    
     <body>
-
+    <!-- ----------------------------------------------------------------------------
+    header
+    ----------------------------------------------------------------------------- -->
         <header>
-            <img src="logo_app_academy.jpg" height="100" border="2"></img>
+            <img src="logo_app_academy.jpg" height="20" border="1"></img>
 
             <nav>
                 <ul>
@@ -16,16 +19,21 @@
             </nav>
         </header>
 
-        <a id="top-of-page"></a>
-        <h1>Salmon</h1>
 
+        
+    <!-- ----------------------------------------------------------------------------
+    section 1: salmon
+    ----------------------------------------------------------------------------- -->
         <section>
+            <a id="top-of-page"></a>
+            <h1>Salmon</h1>
+
             <h2 id="description">Description</h2>
             Salmon is a kind of fish that you cook on a hot surface and then eat it.  
             <br><br>
     
             <figure>
-                <img src="https://images.ctfassets.net/lufu0clouua1/Tr9lRGHXCS6GU4Kc8Qkg0/2f3a25a99c3f54c867ef5f8350aca5a3/King-Salmon.jpg"
+                <img src="https://hdwallpapers.cat/wallpaper/bear-catching-salmon-canada-river-animals-86XR.jpg"
                 height="350" border="2">
                 <figcaption>
                     <a href="https://en.wikipedia.org/wiki/Salmon#History">The History of Salmon</a>
@@ -52,6 +60,53 @@
                 </ol>
         </section>
 
+
+
+    <!-- ----------------------------------------------------------------------------
+    section 2: user feedback
+    ----------------------------------------------------------------------------- -->
+        <section>
+            <h2 id="description">What Do You Think?</h2>
+
+            <form>
+                <label for="name"><b>Your Name:</b></label>
+                <input type="text" id="name" name="name">
+
+                <br>
+
+                <label for="rating"><b>Rating:</b></label>
+                <input type="radio" name="rating" value="1" checked="checked">1
+                <input type="radio" name="rating" value="2">2
+                <input type="radio" name="rating" value="3">3
+                <input type="radio" name="rating" value="4">4
+                <input type="radio" name="rating" value="5">5
+
+                <br>
+
+                <label for="cooking expertise"><b>Cooking Expertise:</b></label>
+                <select>
+                    <option value="Select Cooking Expertise" selected="true" disabled="true">Select Cooking Expertise</option>
+                    <option value="I cook sometimes">I cook sometimes</option>
+                    <option value="I cook every day">I cook every day</option>
+                    <option value="I just cook as a hobby">I just cook as a hobby</option>
+                    <option value="I'm a professional chef">I'm a professional chef</option>
+                </select>
+
+                <br><br>
+
+                <label for="review"><b>Your Review</b>
+                    <br>
+                    <textarea rows="10" cols="50">Let us know what you think of this recipe.</textarea>
+                </label>
+                <input type="submit" name="review" id="review" value="Submit your review">
+            </form>
+        </section>
+
+
+
+    <!-- ----------------------------------------------------------------------------
+    footer
+    ----------------------------------------------------------------------------- -->         
         <footer>
             <p>
                 This recipe came from a piece of salmon I cooked once.
